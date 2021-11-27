@@ -1,3 +1,8 @@
+#pragma once
+
+#include "Functions.hpp"
+
+
 void ts::FileReadToVector(std::string filenameOfInputFile, std::vector<int>& arrvec)
 {
     std::ifstream in(filenameOfInputFile);
@@ -59,6 +64,6 @@ void ts::FileWriteVector(std::string filenameOfOutputFile, std::vector<int>& arr
     {
         for (const auto& v : arrvec)
             out << v << " ";
-        std::cout << "Vector writed to file!\n";
+        std::cout << "Vector written to file!\n";
     }
 }

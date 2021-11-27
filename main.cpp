@@ -11,7 +11,6 @@
 //отсортируйте последовательность по возрастанию.
 //
 #include "Functions.hpp"
-#include "Functions.cpp"
 
 int main()
 {
