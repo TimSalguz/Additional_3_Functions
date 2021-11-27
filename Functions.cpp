@@ -23,13 +23,13 @@ void ts::FileReadToVector(std::string filenameOfInputFile, std::vector<int>& arr
     }
 }
 
-void ts::ReadVectorToConsole(std::vector<int> arrvec)
+void ts::ReadVectorToConsole(std::vector<int>& arrvec)
 {
     for (const auto& v : arrvec)
         std::cout << v << std::endl;
 }
 
-int ts::FindMaxValueInVector(std::vector<int> arrvec)
+int ts::FindMaxValueInVector(std::vector<int>& arrvec)
 {
     int maxValue = MIN;
     for (const auto& v : arrvec)
@@ -38,7 +38,7 @@ int ts::FindMaxValueInVector(std::vector<int> arrvec)
     return maxValue;
 }
 
-int ts::FindMinValueInVector(std::vector<int> arrvec)
+int ts::FindMinValueInVector(std::vector<int>& arrvec)
 {
     int minValue = MAX;
     for (const auto& v : arrvec)
